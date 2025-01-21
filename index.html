@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Employee Database management</title>
+</head>
+<body>
+    <div class="header">
+       <h2>Employee Database Management</h2> 
+    </div>
+    <form id="form" class="employee-form">
+        <div class="forms">
+            <label for="name">Name:</label><br>
+            <input type="text" id="Name" name="name" placeholder="Name" required>
+            <span class="error-message" id="error-Name"></span>
+        </div>
+        <div class="forms">
+          <label for="job">job:</label>
+          <input type="text" id="job" name="job" placeholder="job" required>
+           <span class="error-message" id="error-job"></span>
+        </div>
+        <div class="forms">
+            <label for="phone">phone:</label>
+            <input type="number" id="phone" name="phone" placeholder="phone" required>
+            <span class="error-message" id="error-phone"></span>
+        </div>
+        <div class="forms">
+                <label for="Email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="email" required>
+                <span class="error-message" id="error-Email"></span>
+        </div>
+        <button type="button" class="btn-form" onclick="newaddEmployee()">Add-employee</button>
+    </form>
+    <div id="employee-list">
+        <!-- add-employee -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
